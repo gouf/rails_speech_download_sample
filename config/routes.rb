@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :users
+
+  match 'users/download_speech', to: 'users#download_speech', via: [:post]
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

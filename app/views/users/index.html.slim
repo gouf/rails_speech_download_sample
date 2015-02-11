@@ -1,0 +1,9 @@
+h1 Listing users
+
+= form_tag('/users/download_speech', method: :post) do |f|
+  p
+    = label(:words, 'words')
+    = text_field(:words, 'words')
+    = select_tag(:lang, options_for_select(%w(en ja)))
+  p
+    = submit_tag('Download')
