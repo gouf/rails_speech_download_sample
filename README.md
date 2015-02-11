@@ -1,28 +1,17 @@
-== README
+Generates and download speech mp3 from form text
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Dependency
 
-Things you may want to cover:
+* Database: PostgreSQL
 
-* Ruby version
+## Usage
 
-* System dependencies
+```
+bundle install
+rake db:setup
+rails s # and access to http://localhost:3000/
+```
 
-* Configuration
+## Link
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+* [c2h2/tts - GitHub](https://github.com/c2h2/tts)
